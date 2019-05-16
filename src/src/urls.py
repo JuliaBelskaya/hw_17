@@ -21,5 +21,5 @@ from hwapp.views import hw17_2
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hw17/', hw17),
-    path('hw17_2/, hw17_2'),
+    path('hw17_2/', hw17_2),
 ]

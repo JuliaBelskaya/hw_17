@@ -19,9 +19,10 @@ def hw17(request):
 
 def hw17_2(request):
     date = request.POST.get('date')
+    month, date, year = date.split('-')
+    if int(date) == int(month) == 1:
+        return HttpResponse(f'С Новым {year} годом!')
+    return HttpResponse(date)
 
-    if date == 01.01:
-        return HttpResponse('С новым '.format(date))
-    else:
-        return HttpResponse(date)
+
 
